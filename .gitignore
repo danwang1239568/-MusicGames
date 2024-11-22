@@ -1,0 +1,8 @@
+node_modules
+.vscode
+dist
+*.pem
+*.log
+*.cer
+
+01.js
