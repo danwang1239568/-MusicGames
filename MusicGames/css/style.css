@@ -1,0 +1,145 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F0F0F0;
+}
+@font-face {
+    font-family: bwxbt;
+    src: url(baoweixiaobaiti.ttf);
+}
+.yyw{
+    font-family: bwxbt;
+    font-size: 72px;
+    color: rgb(132, 223, 239);
+    display: inline-block;
+    margin: 10px;
+}
+#club{
+    font-size: 24px;
+    color: rgb(132, 223, 239);
+}
+.center{
+    text-align: center;
+}
+#div1{
+    background-image: url(bgimg-01.jpg);
+    background-size: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+#div2{
+    background-image: url(bgimg-07.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 160px;
+    font-size: 48px;
+    text-align: center;
+}
+#div21{
+    text-align: right;
+    font-size: 24px;
+    background-color: rgba(238, 130, 238,0.1);
+    
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    font-weight: bold;
+}
+#div3{
+    width: 100%;
+    height: 60%;
+}
+#div31{
+    margin: 30px 30% 0% 70%;
+    line-height: 280%;
+}
+#div4{
+    width: 100%;
+}
+#div41{
+    line-height: 280%;
+    margin-top: 10px;
+    margin-left: 20%;
+    float: left;
+}
+#img01{
+    width: 50%;
+    margin: 8px;
+    float: left;
+}
+#img02{
+    width: 50%;
+    margin: 8px;
+    float: right;
+}
+#img03{
+    width: 95%;
+    margin: 2.5%;
+}
+.p1{
+    font-size: 72px;
+    color: rgb(252, 203, 111);
+    font-family: bwxbt;
+}
+.p2{
+    font-size: 72px;
+    color: greenyellow;
+    font-family: bwxbt;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(245, 245, 245,0.4);
+}
+th{
+    background-color: orange;
+}
+.tb{
+    width: 300px;
+}
+.js{
+    font-size: 20px;
+    margin: 20px;
+    font-family: 楷体;
+}
+th{
+    font-size: 28px;
+    font-style: italic;
+}
+#p-md{
+    font-size: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+.daohang{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(9, 78, 55, 0.6);
+    font-family: bwxbt;
+    font-size: 36px;
+    line-height: 60px;
+}
+.hdsp{
+    width: 300px;
+}
+#jrwm{
+    height: 800px;
+}
+.code{
+    width: 200px;
+}
+button{
+    font-size: 24px;
+    background-color: rgb(90, 199, 90);
+    font-family: 楷体;
+}
+#more1{
+    margin-left: 75%;
+}
