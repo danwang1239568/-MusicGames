@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            box-shadow: 1px 1px 1px rgba(10,10,10,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="d"></div>
+    <script>
+        var div = document.getElementById('d');
+        div.addEventListener('mousedown', function(e){
+            var x = e.offsetX;
+            var y = e.offsetY;
+            var a=true;
+            // console.log(x, y);
+            document.addEventListener('mousemove', function(e){
+                var div_left = e.clientX - x;
+                var div_top = e.clientY - y;
+                if(a){
+                    //div.style.left = div_left + 'px';
+                    //div.style.top = div_top + 'px';
+                    div.style.left = Math.max(0, Math.min(window.innerWidth - div.offsetWidth, div_left)) + 'px';
+                    div.style.top = Math.max(0, Math.min(window.innerHeight - div.offsetHeight, div_top)) + 'px';
+                    // console.log(div_left, div_top);
+                }
+            });
+            div.addEventListener('mouseup', function(){
+                a=false;
+            });
+        });
+		
+		const list = [1,2,3,4,5]
+		const res = list.toString()
+		console.log(res)
+		console.log(list)
+		
+		const users = [
+		  { name: "Alice", score: 85 },
+		  { name: "Bob", score: 75 },
+		  { name: "Charlie", score: 95 },
+		  { name: "David", score: 85 },
+		];
+		users.sort((a, b) => {
+			if(a.score == b.score) return b.name.localeCompare(a.name)
+			return a.score - b.score
+		})
+		console.log(users);
+		
+    </script>
+</body>
+</html>
