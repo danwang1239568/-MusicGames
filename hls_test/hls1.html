@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>hls</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<video id="vedio" width="600px" controls></video>
+		
+		<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+		<script>
+			const vedio = document.getElementById('vedio')
+			const src = 'vedio/playlist.m3u8'
+			if(Hls.isSupported()){
+				const hls = new Hls();
+				hls.loadSource(src)
+				hls.attachMedia(vedio)
+			}
+		</script>
+	</body>
+</html>

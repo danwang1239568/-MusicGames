@@ -1,6 +1,0 @@
-hello
-<<<<<<< HEAD
-主线
-=======
-content分支
->>>>>>> 94929ff (content分支第一个)
